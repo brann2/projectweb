@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+//import gambar
+import Bran from "../src/assets/image/brandon.png";
+import Nature from "../src/assets/image/nature.png";
+import Book from "../src/assets/image/book.png";
+import Translate from "../src/assets/image/translate.png";
+import Computer from "../src/assets/image/computer.png";
+//import page
+import ProfileInfo from "./page/ProfileInfo";
+import Contact from "./page/Contact";
+import ProfilePicture from "./page/ProfilePicture";
+import Education from "./page/Education";
+import Language from "./page/Language";
+import Skill from "./page/Skill";
+import Navigation from "./component/Navbar";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navigation />
+      <div className="container">
+        <ProfilePicture
+          imageSrc={Bran} 
+          altText="Hi my name is Brandon Luturmas!"
+        />
+        <ProfileInfo
+          id="profileinfo"
+          prof="Profile"
+          description="I am a Computer Science student passionate about technology and programming. Eager to deepen my knowledge in areas like software development, AI, and data analysis. Skilled in basic programming languages (Python, Java, C++) with a strong desire to learn and grow. I am a team player with good analytical skills, aiming to make meaningful contributions in the tech industry."
+          imageSrc={Computer}
+        />
+        <Education
+          id="education"
+          scolar="University Of Klabat"
+          imageSrc={Book}
+        />
+        <Language id="language" imageSrc={Translate} />
+        <Skill id="skill" />
+
+        <Contact
+          id="contact"
+          email="brandonprince49@gmail.com"
+          phone="081316445453"
+          linkedin="linkedin.com/in/brandon-luturmas"
+        />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
