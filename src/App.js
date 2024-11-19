@@ -20,13 +20,13 @@ const App = () => {
       <Navigation />
       <div className="container">
         <ProfilePicture
-          imageSrc={Bran} 
+          imageSrc={Bran}
           altText="Hi my name is Brandon Luturmas!"
         />
         <ProfileInfo
           id="profileinfo"
           prof="Profile"
-          description="I am a Computer Science student passionate about technology and programming. Eager to deepen my knowledge in areas like software development, AI, and data analysis. Skilled in basic programming languages (Python, Java, C++) with a strong desire to learn and grow. I am a team player with good analytical skills, aiming to make meaningful contributions in the tech industry."
+          description="I am a Computer Science student passionate about programming, AI, and data analysis. Skilled in Python, Java, and C++, with experience in algorithms and web development. A team player with strong analytical skills, eager to learn and contribute to innovative tech solutions."
           imageSrc={Computer}
         />
         <Education
